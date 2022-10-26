@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+
+body {
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.tradotim-services-wrapper { 
+    display: flex;
+	background-color:rgba(255, 255, 255, 1);
+	width:100%;
+	height:594px;
+}
+.tradotim-servises-promotion-text { 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	background-color:rgba(210.00000268220901, 38.0000015348196, 48.000000938773155, 1);
+	width:50%;
+	height:594px;
+}
+
+.tradotim-servises-promotion-text span {
+    margin: 10px 0;
+}
+.tradotim-servises-picture-frame { 
+    background-color: #f5f5f5;
+    position: relative;
+	width:50%;
+	height:594px;
+    z-index: 1;
+}
+.tradotim-servises-text-top { 
+	color:rgba(255, 255, 255, 1);
+	width:70%;
+	font-family:Montserrat;
+    font-weight: 300;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:3;
+    padding-left: 2px;
+}
+.tradotim-servises-text-bottom { 
+	color:rgba(255, 255, 255, 1);
+	width:70%;
+	font-family:Work Sans;
+	text-align:left;
+	font-size:36px;
+	letter-spacing:0;
+    
+}
+
+.tradotim-servises-text-bottom-bottom { 
+	color:rgba(255, 255, 255, 1);
+	width:70%;
+	font-family:Montserrat;
+    font-weight: 300;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:3;
+    padding-left: 2px;
+}
+
+.rengaskuva {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: -50px;
+    max-width: 500px;
+    max-height: 350px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #000;
+    overflow: hidden;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.apuvalinekuva {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 60%;
+    top:5%;
+    min-height: 150px;
+    min-width: 150px;
+    max-width: 250px;
+    max-height: 250px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #000;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.flexelkuva {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 350px;
+    left:62%;
+    height: auto;
+    min-width: 180px;
+    max-width: 220px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #000;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tradotim-servises-picture-frame img {
+    display: block;
+    width: 100%;
+
+    
+    
+}
+
+.rengasoverlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: #f5f5f5;
+}
+.rengasoverlay span {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.renkaat-linkki {
+    display: block;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+}
+
+/**************MOBILE STYLES****************/
+
+
+@media only screen and (max-width: 760px) {
+
+    .tradotim-services-wrapper { 
+    display: flex;
+    flex-direction: column;
+	background-color:rgba(255, 255, 255, 1);
+	width:100%;
+	height:auto;
+    }
+    .tradotim-servises-promotion-text { 
+        width:100%;
+        height:600px;
+    }
+
+    .tradotim-servises-picture-frame { 
+        width:100%;
+        height:550px;
+    }
+
+    /**************KUVAT****************/
+
+    .rengaskuva {
+        top: -50px;
+        left: 50%;
+        width: 90%;
+        height: 350px;
+        transform: translateX(-50%);
+    }
+    
+    .apuvalinekuva {
+        left: 8%;
+        top: 250px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .flexelkuva {
+        top: 300px;
+        left:80%;
+        min-width: 125px;
+        max-width: 150px;
+        max-height: 220px;
+        background-color: #fff;
+        box-shadow: 1px 1px 5px #000;
+        overflow: hidden;
+        transform: translateX(-80%);
+    }
+
+}
